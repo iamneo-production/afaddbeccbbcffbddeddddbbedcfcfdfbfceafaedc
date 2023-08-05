@@ -67,7 +67,7 @@ public class TaskController {
     public ResponseEntity<?> changeStatus(@PathVariable String taskId){
         List<Task> allTask = (List<Task>) taskRepository.findAll();
 
-        if(allTasK !=null){
+        if(allTask !=null){
             for(Task task : allTask){
                 if(task.getTaskId().equals(taskId)){
                     task.setTaskStatus("changed");
@@ -80,3 +80,4 @@ public class TaskController {
     }
 
 }
+
